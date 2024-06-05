@@ -8,7 +8,7 @@ export default function Header() {
 			<button className="dd-toggle">View</button>
 			<button className="dd-toggle">New</button>
 			<button className="dd-toggle">
-				<FaCrown className="fas fa-crown dd-toggle__icon" />
+				<FaCrown className="dd-toggle__icon" />
 			</button>
 			<button className="dd-toggle">
 				<FaBell />
