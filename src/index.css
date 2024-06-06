@@ -122,6 +122,7 @@ button {
 	flex-direction: column;
 	align-items: center;
 	transition: all 0.4s ease-in;
+	cursor: pointer;
 	animation: fade-in-from-left 0.5s;
 }
 .menu__button:hover,
@@ -172,6 +173,61 @@ button {
 .panel {
 	background-color: #2b363b;
 	width: 350px;
+	padding: 15px 31px;
+}
+
+.panel__top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #4b5155;
+	padding-bottom: 12px;
+}
+
+.first-heading {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.panel__collapse-icon {
+	height: 20px;
+	width: 20px;
+	color: #6b7276;
+	cursor: pointer;
+}
+.panel__images {
+	padding: 25px 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+}
+.panel__img {
+	width: 140px;
+	height: 140px;
+	object-fit: cover;
+	border-radius: 7px;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+.panel__img:hover {
+	transform: scale(1.05);
+}
+
+.panel__btn {
+	width: 140px;
+	height: 140px;
+	border-radius: 7px;
+	background-color: #333e44;
+	cursor: pointer;
+}
+.panel__btn:hover,
+.panel__btn:focus {
+	background-color: #404c52;
+}
+.panel__upload-icon {
+	font-size: 25px;
+	color: #21292d;
 }
 /*----------------------------------------------------------------*/
 
