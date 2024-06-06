@@ -1,4 +1,5 @@
 import { RiArrowRightWideLine } from 'react-icons/ri';
+import ArtBoard from './ArtBoard';
 
 export default function Main() {
 	return (
@@ -13,6 +14,7 @@ export default function Main() {
 				</section>
 				<button className="button">Publish</button>
 			</div>
+			<ArtBoard />
 		</>
 	);
 }
