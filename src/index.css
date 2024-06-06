@@ -26,7 +26,7 @@ body {
 
 @keyframes fade-in-from-left {
 	0% {
-		opacity: 1;
+		opacity: 0;
 		transform: translateX(-50px);
 	}
 	100% {
@@ -34,6 +34,16 @@ body {
 		transform: translateX(0);
 	}
 }
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 /* BASE STYLES */
 
 .app {
@@ -208,6 +218,23 @@ button {
 	border-radius: 7px;
 	cursor: pointer;
 	transition: all 0.2s ease-in-out;
+	animation: fade-in 1s;
+}
+
+.panel__img:nth-child(2) {
+	animation: fade-in 1s 0.1s backwards;
+}
+
+.panel__img:nth-child(3) {
+	animation: fade-in 1s 0.2s backwards;
+}
+
+.panel__img:nth-child(4) {
+	animation: fade-in 1s 0.3s backwards;
+}
+
+.panel__img:nth-child(5) {
+	animation: fade-in 1s 0.4s backwards;
 }
 
 .panel__img:hover {
@@ -220,6 +247,7 @@ button {
 	border-radius: 7px;
 	background-color: #333e44;
 	cursor: pointer;
+	animation: fade-in 1s 0.5s backwards;
 }
 .panel__btn:hover,
 .panel__btn:focus {
@@ -234,4 +262,49 @@ button {
 .main {
 	background-color: #edf1f3;
 	flex: 1;
+}
+
+.info-bar {
+	height: 50px;
+	background-color: #fff;
+	border-bottom: 1px solid #d6dde1;
+	padding: 0 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.breadcrumbs {
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	font-size: 12px;
+}
+
+.breadcrumbs__link {
+	color: #a6adb1;
+	text-decoration: none;
+}
+
+.breadcrumbs__icon {
+	color: #a6adb1;
+	margin: 0 13px;
+}
+
+.breadcrumbs__name {
+	color: #2e3335;
+	font-weight: 500;
+}
+
+.button {
+	background-color: #375bb6;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 8px 20px;
+	cursor: pointer;
+	border-radius: 500px;
+}
+
+.button:hover {
+	background-color: #26438d;
 }
